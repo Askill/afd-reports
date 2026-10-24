@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reports &middot; Hexane AfD email leak</title>
+<meta name="description" content="Self-contained, publishing-ready analyses of the AfD email leak.">
+<meta property="og:title" content="Reports &middot; Hexane AfD email leak">
+<meta property="og:description" content="Self-contained, publishing-ready analyses of the AfD email leak.">
+<meta property="og:type" content="website">
+<style>
+:root{--ink:#121212;--paper:#FFFFFF;--red:#E3120B;--blue:#006BA2;
+      --slate:#6E7A8A;--slate-text:#586173;--grey:#B5B5B5;}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--paper);color:var(--ink);
+     font-family:Georgia,'Iowan Old Style','Times New Roman',serif;
+     font-size:17px;line-height:1.55;}
+.wrap{max-width:1080px;margin:0 auto;padding:56px 24px 72px;}
+.kicker{font-family:Helvetica,Arial,'Segoe UI',sans-serif;font-size:11px;
+        letter-spacing:.17em;text-transform:uppercase;color:var(--slate);
+        font-weight:700;margin:0 0 12px;}
+h1{font-size:46px;line-height:1.06;margin:0 0 18px;font-weight:700;
+   letter-spacing:-.012em;}
+h2{font-size:31px;line-height:1.12;margin:0 0 12px;font-weight:700;
+   letter-spacing:-.008em;}
+.standfirst{font-size:20px;line-height:1.45;color:#3a3a3a;margin:0;
+            max-width:780px;}
+.rule{border:0;border-top:1px solid #d8d8d8;margin:40px 0 0;}
+main{margin:48px 0 0;}
+section + section{margin-top:56px;}
+.report{border-top:1px solid #d8d8d8;padding:24px 0 0;margin:24px 0 0;
+        max-width:860px;}
+.meta{font-family:Helvetica,Arial,'Segoe UI',sans-serif;font-size:11px;
+      letter-spacing:.14em;text-transform:uppercase;color:var(--slate);
+      font-weight:700;margin:0 0 10px;}
+h3{font-size:27px;line-height:1.15;margin:0 0 10px;font-weight:700;
+   letter-spacing:-.006em;}
+h3 a{color:var(--ink);text-decoration:none;}
+h3 a:hover{color:var(--red);}
+.dek{font-size:18px;line-height:1.5;color:#3a3a3a;margin:0 0 14px;
+     max-width:780px;}
+.more{font-family:Helvetica,Arial,'Segoe UI',sans-serif;font-size:13px;
+      font-weight:700;margin:0;}
+.more a{color:var(--red);text-decoration:none;}
+.more a:hover{text-decoration:underline;}
+p{max-width:820px;}
+footer{margin:64px 0 0;border-top:1px solid #d8d8d8;padding-top:22px;
+       font-family:Helvetica,Arial,'Segoe UI',sans-serif;font-size:12.5px;
+       line-height:1.6;color:var(--slate);}
+footer b{color:var(--ink);}
+@media (max-width:640px){
+  .wrap{padding:32px 16px 48px;}
+  h1{font-size:34px;}
+  h2{font-size:25px;}
+  h3{font-size:22px;}
+  .standfirst{font-size:18px;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="kicker">Hexane &middot; AfD email leak &middot; reports</p>
+  <h1>Reports</h1>
+  <p class="standfirst">Self-contained, publishing-ready analyses of the AfD
+  email leak. Each report is a single HTML file: data, code and styling
+  embedded, no external dependencies.</p>
+  <hr class="rule">
+</header>
+
+<main>
+<section aria-labelledby="published">
+  <h2 id="published">Published</h2>
+  <article class="report">
+    <p class="meta">23 October 2026 &middot; Forwarding chains</p>
+    <h3><a href="reports/afd-mail-flows.html">How the AfD&rsquo;s mail really moves</a></h3>
+    <p class="dek">A reconstruction of 213,202 forwarding hops across 421,178
+    leaked emails shows how a handful of offices and private addresses turned a
+    party inbox into a distribution network, and how some content reached dozens
+    of MPs without a single direct email.</p>
+    <p class="more"><a href="reports/afd-mail-flows.html">Read the report &rarr;</a></p>
+  </article>
+</section>
+
+<section aria-labelledby="about">
+  <h2 id="about">About these reports</h2>
+  <p>These pages are built from the hexane AfD leak: 421,178 emails across 10
+  mailboxes, plus documents, databases and media. Each report reconstructs one
+  slice of the corpus and publishes the method, the unit of analysis and the
+  provenance alongside the figures.</p>
+  <p>Reports are rendered offline and shipped as single files. They contain no
+  trackers, no external fonts and no third-party requests.</p>
+  <p>Addresses are reproduced as they appear in the leaked material. No
+  pseudonymisation is applied in these published reports.</p>
+</section>
+</main>
+
+<footer>
+  <p><b>Hexane</b> &middot; AfD email leak &middot; reports</p>
+  <p>Source: hexane AfD leak, 421,178 emails. Figures rendered offline with
+  D3 v7 and d3-sankey.</p>
+</footer>
+</div>
+</body>
+</html>
